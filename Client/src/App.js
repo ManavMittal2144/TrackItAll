@@ -9,9 +9,8 @@ import Landing from "./pages/Landing_page";
 function App() {
   return (
     <>
-      
       <Routes>
-      <Route path="/" element={<Landing />} />
+        <Route path="/" element={<Landing />} />
         <Route
           path="/Home"
           element={

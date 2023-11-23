@@ -5,14 +5,10 @@ const Home = () => {
       <nav>
         <ul>
           <li>
-            <div className="page-1">
-                <Link to="/Expense_Tracker">Page 1</Link>
-            </div>
+            <Link to="/Expense_Tracker">Page 1</Link>
           </li>
           <li>
-            <div className="page-2">
-                <Link to="/To_Do_List">Page 2</Link>
-            </div>
+            <Link to="/To_Do_List">Page 2</Link>
           </li>
         </ul>
       </nav>

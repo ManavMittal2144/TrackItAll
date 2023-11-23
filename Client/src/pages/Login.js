@@ -10,7 +10,7 @@ const Login = () => {
   const submitHandler = async (values) => {
     try {
       setLoading(true);
-      const { data } = await axios.post('/users/login', values);
+      const { data } = await axios.post("/users/login", values);
       setLoading(false);
       message.success("login success");
       localStorage.setItem(
@@ -21,8 +21,7 @@ const Login = () => {
     } catch (error) {
       setLoading(false);
       message.error("something went wrong");
-      }
-      
+    }
   };
 
   //prevent for login user
@@ -33,14 +32,14 @@ const Login = () => {
   }, [navigate]);
   return (
     <>
-        <div className="login-container">
+      <div className="login-container">
         <div className="upper-info bg_i">
           <div className="center-text">
             <h1>Welcome To TrackItAll</h1>
             <h4>
               where tasks meet finance. Simplify your life with our one-stop
-              solution for to-dos and expenses. Discover the power of
-              simplicity today!
+              solution for to-dos and expenses. Discover the power of simplicity
+              today!
             </h4>
           </div>
         </div>
@@ -57,19 +56,19 @@ const Login = () => {
                   <Input type="password" />
                 </Form.Item>
                 <div className="d-flex justify-content-between">
-                  <Link to="/register" style={{ color: 'black' }}>
+                  <Link to="/register" style={{ color: "black" }}>
                     Not a user? Click Here to register
                   </Link>
                 </div>
-                
-                  <div className=" hii">
-                    <button className="btn btn-primary butto">Login</button>
+
+                <div className=" hii">
+                  <button className="btn btn-primary butto">Login</button>
                 </div>
               </Form>
             </div>
           </div>
         </div>
-    </div>
+      </div>
     </>
   );
 };

@@ -10,15 +10,14 @@ const Register = () => {
   const submitHandler = async (values) => {
     try {
       setLoading(true);
-     await axios.post('/users/register', values);
+      await axios.post("/users/register", values);
       message.success("Registeration Successfull");
       setLoading(false);
       navigate("/login");
     } catch (error) {
       setLoading(false);
       message.error("something went wrong");
-      }
-     
+    }
   };
 
   //prevent for login user
@@ -35,8 +34,8 @@ const Register = () => {
             <h1>Welcome To TrackItAll</h1>
             <h4>
               where tasks meet finance. Simplify your life with our one-stop
-              solution for to-dos and expenses. Discover the power of
-              simplicity today!
+              solution for to-dos and expenses. Discover the power of simplicity
+              today!
             </h4>
           </div>
         </div>
@@ -56,17 +55,19 @@ const Register = () => {
                   <Input type="password" />
                 </Form.Item>
                 <div className="d-flex justify-content-between">
-                  <Link to="/login" style={{ color: 'black' }}>Already Register ? Cleck Here to login</Link>
+                  <Link to="/login" style={{ color: "black" }}>
+                    Already Register ? Cleck Here to login
+                  </Link>
                 </div>
-                
-                  <div className=" hii">
-                    <button className="btn btn-primary butto">Register</button>
+
+                <div className=" hii">
+                  <button className="btn btn-primary butto">Register</button>
                 </div>
               </Form>
             </div>
           </div>
         </div>
-    </div>
+      </div>
       {/* <div className="mark-1">
       <div className="resgister-page ">
         {loading && <Spinner />}
@@ -88,7 +89,6 @@ const Register = () => {
         </Form>
       </div>
       </div> */}
-      
     </>
   );
 };
