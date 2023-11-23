@@ -4,12 +4,16 @@ import Register from "./pages/Register";
 import Login from "./pages/Login";
 import ToDoList from "./pages/ToDoPage";
 import Home from "./pages/Home";
+import Landing from "./pages/Landing_page";
+
 function App() {
   return (
     <>
+      
       <Routes>
+      <Route path="/" element={<Landing />} />
         <Route
-          path="/"
+          path="/Home"
           element={
             <ProtectedRoutes>
               <Home />

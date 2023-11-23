@@ -17,7 +17,7 @@ const Login = () => {
         "user",
         JSON.stringify({ ...data.user, password: "" })
       );
-      navigate("/");
+      navigate("/Home");
     } catch (error) {
       setLoading(false);
       message.error("something went wrong");
@@ -28,7 +28,7 @@ const Login = () => {
   //prevent for login user
   useEffect(() => {
     if (localStorage.getItem("user")) {
-      navigate("/");
+      navigate("/Home");
     }
   }, [navigate]);
   return (

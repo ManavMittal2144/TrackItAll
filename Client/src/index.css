@@ -1,3 +1,4 @@
+/* login and register */
 * {
   padding: 0;
   margin: 0;
@@ -133,4 +134,167 @@
 .negative {
   color: red;
     
+}
+
+
+
+/* landing page */
+#navbb{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: black;
+
+}
+
+#navbb a{
+  color: white;
+  font-size: 1em;
+  text-decoration: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.spotify{
+  font-size: 2em;
+}
+
+.navul a{
+  margin: 18px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.navul a:hover{
+  background-color: #084887;
+}
+.bg{
+  height:90vh;
+  width: 100;
+  background-image: url('https://media.istockphoto.com/id/185007737/photo/dark-blue-grunge-background.jpg?s=612x612&w=0&k=20&c=YIHLCULIeavPuYWz16ecgycBWdZn7XbB0qMjoi9r9p8=');
+  /* background-image: url('https://images.unsplash.com/photo-1553095066-5014bc7b7f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80'); */
+  background-size: cover;
+  display: flex;
+  justify-content:space-evenly;
+}
+
+.phone_spo{
+  height: 90%;
+  margin-top: 5%;
+  margin-left:18%;
+  transition: 200ms;
+}
+.phone_spo:hover{
+
+  transform: rotatez(1deg);
+}
+
+
+.content{
+ 
+  margin-top: 13%;
+  margin-left: 0px;
+}
+.content p{
+  color: white;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 3.9em;
+}
+.button {
+  background-color: white;
+  border-radius: 30px;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  border: 1px solid white;
+  font-size: 0.7em;
+}
+
+.btn{
+  color:black;
+}
+.btn:hover{
+  transform: scaleX(1.01);
+}
+.button:hover{
+  transition: 900ms;
+  transform: scaleX(1.01);
+}
+h2{
+  text-align: center;
+  padding: 7%;
+}
+h2:hover{
+  transition: 900ms;
+  transform: scaleX(1.01);
+
+}
+.part2{
+  width: 100;
+  display: flex;
+  justify-content: space-evenly;
+}
+.rectangle{
+  transition:1s ;
+
+}
+
+.circle{
+  margin: auto;
+  border-radius: 50%;
+  height: 100px;
+  background-image: url('https://media.istockphoto.com/id/185007737/photo/dark-blue-grunge-background.jpg?s=612x612&w=0&k=20&c=YIHLCULIeavPuYWz16ecgycBWdZn7XbB0qMjoi9r9p8=');
+  background-size: cover;
+  transition:1s ;
+  width: 100px;
+}
+
+.circle:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.circle i{
+  margin-top: 23px;
+  margin-left: 24px;
+  color: white;
+  font-size: 3em;
+}
+
+
+.rectangle h6{
+  padding: 6%;
+  text-align: center; 
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;   
+}
+
+.rectangle p{
+  text-align: center;
+}
+
+.part3,.part5{
+  margin-top: 7%;
+  /* height:55vh; */
+  width: 100;
+  background-image: url('https://media.istockphoto.com/id/185007737/photo/dark-blue-grunge-background.jpg?s=612x612&w=0&k=20&c=YIHLCULIeavPuYWz16ecgycBWdZn7XbB0qMjoi9r9p8=');
+  background-size: cover;
+  margin-bottom: 7%;
+}
+.part3 p, .part5 p{
+  text-align: center;
+  padding: 7%;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 3.9em;
+}
+
+.bbb{
+  padding:50px;
+  text-align: center;
+  
+}
+footer{
+  background-image: url('https://media.istockphoto.com/id/185007737/photo/dark-blue-grunge-background.jpg?s=612x612&w=0&k=20&c=YIHLCULIeavPuYWz16ecgycBWdZn7XbB0qMjoi9r9p8=');
+  background-size: cover;
+}
+.font_color{
+  color: white;
+  text-decoration: none;
 }
