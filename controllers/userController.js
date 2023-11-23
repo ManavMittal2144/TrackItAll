@@ -1,17 +1,29 @@
 const userModel = require("../models/userModel");
-
+const bcryptjs = require("bcryptjs");
 // login callback
+async function hashpass(password) {
+  const res = await bcryptjs.hash(password, 10);
+  return res;
+}
+async function compare(userpass, hashpass) {
+  const res = await bcryptjs.compare(userpass, hashpass);
+  return res;
+}
 const loginController = async (req, res) => {
   try {
     const { email, password } = req.body;
-    const user = await userModel.findOne({ email, password });
+
+    const user = await userModel.findOne({ email });
+    const passcheck = await compare(password, user.password);
     if (!user) {
       return res.status(404).send("User Not Found");
     }
-    res.status(200).json({
-      success: true,
-      user,
-    });
+    if (user && passcheck) {
+      res.status(200).json({
+        success: true,
+        user,
+      });
+    }
   } catch (error) {
     res.status(400).json({
       success: false,
@@ -23,11 +35,17 @@ const loginController = async (req, res) => {
 //Register Callback
 const registerController = async (req, res) => {
   try {
-    const newUser = new userModel(req.body);
-    await newUser.save();
+    const { name, email, password } = req.body;
+
+    const data = {
+      name: req.body.name,
+      email: req.body.email,
+      password: await hashpass(req.body.password),
+    };
+    await userModel.insertMany([data]);
     res.status(201).json({
       success: true,
-      newUser,
+      data,
     });
   } catch (error) {
     res.status(400).json({
