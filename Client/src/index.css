@@ -12,8 +12,95 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 90vh;
+  height: 60vh;
+  /* color: white !important; */
+  
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  background-image: linear-gradient(to right, rgb(206, 138, 243),rgb(100, 157, 255));
+  /* background-image: linear-gradient(to right, rgb(0, 157, 255),white,rgb(206, 138, 243)); */
+  /* background-image: url('https://t4.ftcdn.net/jpg/01/23/60/47/240_F_123604771_IOtdy5cM3yLshKlH01ynRUsvHmbfUvmd.jpg'); */
+  background-size: cover;
+  border-radius: 6px;
 }
+.mark-1{
+  height:0vh;
+  width:500px;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.log_in{
+    width: 15%;
+    padding: 0.6%;
+    border: none;
+    color:#9a6946;
+    background-color: #f1caaf;
+}
+.log_in:hover{
+    background-color: #e3b595;
+}
+.log_box{
+    border: 2px solid black;
+    height: 50vh;
+    width:40vw;
+}
+.hii{
+  display: flex;
+  justify-content: center;
+  color: black;
+}
+
+.bg_i_log{
+    background-image: url('https://static.vecteezy.com/system/resources/previews/011/561/871/original/aesthetic-abstract-modern-brown-background-illustration-perfect-for-wallpaper-backdrop-postcard-background-banner-vector.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    color:#b88968;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,sans-serif;
+}
+.upper-info{
+  text-align: center;
+  color:black;
+}
+.butto{
+  margin-top: 10px;
+  background-color: black;
+  color:white;
+  background-image: black;
+}
+
+.bg_i {
+    /* background-image: url('https://img.freepik.com/premium-vector/network-connection-background-abstract-style_23-2148875738.jpg'); */
+    background-size: cover;
+    background-position: center;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.login-container {
+  background-image: linear-gradient(to right, rgb(100, 157, 255),rgb(206, 138, 243));
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center; */
+  height: 100vh; /* Adjust as needed */
+}
+
+.center-text {
+  text-align: center;
+}
+
 /*transaction page*/
 .filters{
   display: flex;
