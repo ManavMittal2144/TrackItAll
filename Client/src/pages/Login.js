@@ -33,23 +33,43 @@ const Login = () => {
   }, [navigate]);
   return (
     <>
-      <div className="resgister-page ">
-        {loading && <Spinner />}
-        <Form layout="vertical" onFinish={submitHandler}>
-          <h1>Login Form</h1>
-
-          <Form.Item label="Email" name="email">
-            <Input type="email" />
-          </Form.Item>
-          <Form.Item label="Password" name="password">
-            <Input type="password" />
-          </Form.Item>
-          <div className="d-flex justify-content-between">
-            <Link to="/register">Not a user ? Click Here to regsiter</Link>
-            <button className="btn btn-primary">Login</button>
+        <div className="login-container">
+        <div className="upper-info bg_i">
+          <div className="center-text">
+            <h1>Welcome To TrackItAll</h1>
+            <h4>
+              where tasks meet finance. Simplify your life with our one-stop
+              solution for to-dos and expenses. Discover the power of
+              simplicity today!
+            </h4>
           </div>
-        </Form>
-      </div>
+        </div>
+        <div className="bg_i">
+          <div className="mark-1">
+            <div className="resgister-page ">
+              {loading && <Spinner />}
+              <Form layout="vertical" onFinish={submitHandler}>
+                <h1 className="login_form">Login Form</h1>
+                <Form.Item label="Email" name="email">
+                  <Input type="email" />
+                </Form.Item>
+                <Form.Item label="Password" name="password">
+                  <Input type="password" />
+                </Form.Item>
+                <div className="d-flex justify-content-between">
+                  <Link to="/register" style={{ color: 'black' }}>
+                    Not a user? Click Here to register
+                  </Link>
+                </div>
+                
+                  <div className=" hii">
+                    <button className="btn btn-primary butto">Login</button>
+                </div>
+              </Form>
+            </div>
+          </div>
+        </div>
+    </div>
     </>
   );
 };

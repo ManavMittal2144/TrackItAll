@@ -29,12 +29,51 @@ const Register = () => {
   }, [navigate]);
   return (
     <>
+      <div className="login-container">
+        <div className="upper-info bg_i">
+          <div className="center-text">
+            <h1>Welcome To TrackItAll</h1>
+            <h4>
+              where tasks meet finance. Simplify your life with our one-stop
+              solution for to-dos and expenses. Discover the power of
+              simplicity today!
+            </h4>
+          </div>
+        </div>
+        <div className="bg_i">
+          <div className="mark-1">
+            <div className="resgister-page ">
+              {loading && <Spinner />}
+              <Form layout="vertical" onFinish={submitHandler}>
+                <h1 className="login_form">Register Form</h1>
+                <Form.Item label="Name" name="name">
+                  <Input />
+                </Form.Item>
+                <Form.Item label="Email" name="email">
+                  <Input type="email" />
+                </Form.Item>
+                <Form.Item label="Password" name="password">
+                  <Input type="password" />
+                </Form.Item>
+                <div className="d-flex justify-content-between">
+                  <Link to="/login" style={{ color: 'black' }}>Already Register ? Cleck Here to login</Link>
+                </div>
+                
+                  <div className=" hii">
+                    <button className="btn btn-primary butto">Register</button>
+                </div>
+              </Form>
+            </div>
+          </div>
+        </div>
+    </div>
+      {/* <div className="mark-1">
       <div className="resgister-page ">
         {loading && <Spinner />}
         <Form layout="vertical" onFinish={submitHandler}>
           <h1>Register Form</h1>
-          <Form.Item label="Name" name="name">
-            <Input />
+            <Form.Item label="Name" name="name">
+              <Input />
           </Form.Item>
           <Form.Item label="Email" name="email">
             <Input type="email" />
@@ -48,6 +87,8 @@ const Register = () => {
           </div>
         </Form>
       </div>
+      </div> */}
+      
     </>
   );
 };
