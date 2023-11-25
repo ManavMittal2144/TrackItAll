@@ -62,7 +62,7 @@ const Login = () => {
                 </div>
 
                 <div className=" hii">
-                  <button className="btn btn-primary butto">Login</button>
+                  <button className="buttonn">Login</button>
                 </div>
               </Form>
             </div>

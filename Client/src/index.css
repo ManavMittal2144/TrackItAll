@@ -77,11 +77,20 @@
   color: black;
 }
 
-.butto {
-  margin-top: 10px;
-  background-color: black;
-  color: white;
-  background-image: black;
+.buttonn:hover {
+  background-color: rgb(27, 14, 14);
+}
+
+.buttonn {
+    color: white;
+    background-color: black;
+    width: 46%;
+    border-radius: 4px;
+    border: 0px solid white;
+    height: 32px;
+    font-size: 16px;
+    text-align: center;
+  
 }
 
 .bg_i {
@@ -169,6 +178,11 @@
   text-decoration: none;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
+#navbb a:hover{
+  transition:800ms;
+  transform: scale(1.1);
+  cursor: pointer;
+}
 
 .spotify {
   font-size: 2em;
@@ -180,7 +194,8 @@
 }
 
 .navul a:hover {
-  background-color: #084887;
+  background-image: url('https://media.istockphoto.com/id/185007737/photo/dark-blue-grunge-background.jpg?s=612x612&w=0&k=20&c=YIHLCULIeavPuYWz16ecgycBWdZn7XbB0qMjoi9r9p8=');
+
 }
 
 .bg {
@@ -206,13 +221,13 @@
 }
 
 
-.content {
+.content1 {
 
   margin-top: 13%;
   margin-left: 0px;
 }
 
-.content p {
+.content1 p {
   color: white;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 3.9em;
@@ -279,11 +294,11 @@ h2:hover {
   cursor: pointer;
 }
 
-.circle i {
+.circle .ii {
   margin-top: 23px;
   margin-left: 24px;
   color: white;
-  font-size: 3em;
+  font-size: 2.4em;
 }
 
 
@@ -330,4 +345,12 @@ footer {
 .font_color {
   color: white;
   text-decoration: none;
+}
+
+
+
+.svg-inline--fa{
+  color: white;
+  height: 1.5em;
+  padding-right: 8px;
 }

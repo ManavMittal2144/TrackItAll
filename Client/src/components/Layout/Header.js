@@ -13,9 +13,8 @@ const Header = () => {
   }, []);
 
   const logoutHandler = () => {
-    localStorage.removeItem("user");
-    message.success("Logout Successfully");
-    navigate("/");
+    
+    navigate("/Home");
   };
   return (
     <>
@@ -43,7 +42,7 @@ const Header = () => {
               </li>
               <li className="nav-item">
                 <button className="btn btn-primary" onClick={logoutHandler}>
-                  Logout
+                  Go To Home
                 </button>
               </li>
             </ul>

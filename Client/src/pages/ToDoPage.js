@@ -162,6 +162,136 @@ const Todo = () => {
     navigate("../Home");
   };
 
+  const renderTodos = () => {
+    const completedTodos = filteredTodos.filter((todo) => todo.completed);
+    const notCompletedTodos = filteredTodos.filter((todo) => !todo.completed);
+
+    return (
+      <>
+        {/* Not Completed Todos */}
+        {notCompletedTodos.length > 0 && (
+          <>
+            <tr>
+              <th colSpan="5" className="text-center">
+                Not Completed Tasks
+              </th>
+            </tr>
+            {notCompletedTodos.map((todo) => (
+              <tr key={todo._id} style={{ backgroundColor: "#ffcdd2" }}>
+                <td>
+                  <input
+                    type="checkbox"
+                    checked={todo.completed}
+                    onChange={() => toggleCompletion(todo._id, todo.completed)}
+                  />
+                </td>
+                <td>{todo.task}</td>
+                <td>
+                  {todo.deadline
+                    ? new Date(todo.deadline).toLocaleDateString()
+                    : "No deadline"}
+                </td>
+                <td>{todo.deadlineTime || "No deadline time"}</td>
+                <td>{todo.priority}</td>
+              </tr>
+            ))}
+            {/* Separator Line */}
+            <tr>
+              <td colSpan="5" className="text-center">
+                ---------------
+              </td>
+            </tr>
+          </>
+        )}
+        {/* Completed Todos */}
+        {completedTodos.length > 0 && (
+          <>
+            <tr>
+              <th colSpan="5" className="text-center">
+                Completed Tasks
+              </th>
+            </tr>
+            {completedTodos.map((todo) => (
+              <tr
+                key={todo._id}
+                style={{
+                  backgroundColor: "#c8e6c9",
+                  textDecoration: "line-through",
+                }}
+              >
+                <td>
+                  <input
+                    type="checkbox"
+                    checked={todo.completed}
+                    onChange={() => toggleCompletion(todo._id, todo.completed)}
+                  />
+                </td>
+                <td>{todo.task}</td>
+                <td>
+                  {todo.deadline
+                    ? new Date(todo.deadline).toLocaleDateString()
+                    : "No deadline"}
+                </td>
+                <td>{todo.deadlineTime || "No deadline time"}</td>
+                <td>{todo.priority}</td>
+              </tr>
+            ))}
+          </>
+        )}
+      </>
+    );
+  };
+
+  const renderAnalysis = () => {
+    const totalTodos = filteredTodos.length;
+    const completedTodos = filteredTodos.filter(
+      (todo) => todo.completed
+    ).length;
+    const remainingTodos = totalTodos - completedTodos;
+    const completionPercentage =
+      totalTodos === 0 ? 0 : (completedTodos / totalTodos) * 100;
+
+    // Feedback based on completion percentage
+    let feedback = "";
+    if (completionPercentage === 100) {
+      feedback = "Excellent! All tasks completed!";
+    } else if (completionPercentage >= 80) {
+      feedback = "Wonderful! Great progress!";
+    } else if (completionPercentage >= 50) {
+      feedback = "Good job! Keep it up!";
+    } else if (completionPercentage > 25) {
+      feedback = "Average progress. You can do better!";
+    } else if (completionPercentage > 0) {
+      feedback = "Bad progress. Improve it!";
+    } else {
+      feedback = "No tasks yet. Add some tasks to get started!";
+    }
+
+    return (
+      <div className="mt-4">
+        <h2>Analysis</h2>
+        <p>Total Todos: {totalTodos}</p>
+        <p>Completed: {completedTodos}</p>
+        <p>Remaining: {remainingTodos}</p>
+        <p>Completion Percentage: {completionPercentage.toFixed(2)}%</p>
+        <div className="progress">
+          <div
+            className="progress-bar"
+            role="progressbar"
+            style={{ width: `${completionPercentage}%` }}
+            aria-valuenow={completionPercentage}
+            aria-valuemin="0"
+            aria-valuemax="100"
+          >
+            {completionPercentage.toFixed(2)}%
+          </div>
+        </div>
+        <h2 className="mt-4">Feedback</h2>
+        <p>{feedback}</p>
+      </div>
+    );
+  };
+
   return (
     <div className="container-fluid mt-4">
       <h1 className="text-center mb-4">ToDo List</h1>
@@ -264,33 +394,9 @@ const Todo = () => {
             <th scope="col">Priority</th>
           </tr>
         </thead>
-        <tbody>
-          {filteredTodos?.map((todo) => (
-            <tr
-              key={todo._id}
-              style={{
-                backgroundColor: todo.completed ? "#c8e6c9" : "#ffcdd2",
-              }}
-            >
-              <td>
-                <input
-                  type="checkbox"
-                  checked={todo.completed}
-                  onChange={() => toggleCompletion(todo._id, todo.completed)}
-                />
-              </td>
-              <td>{todo.task}</td>
-              <td>
-                {todo.deadline
-                  ? new Date(todo.deadline).toLocaleDateString()
-                  : "No deadline"}
-              </td>
-              <td>{todo.deadlineTime || "No deadline time"}</td>
-              <td>{todo.priority}</td>
-            </tr>
-          ))}
-        </tbody>
+        <tbody>{renderTodos()}</tbody>
       </table>
+      {renderAnalysis()}
     </div>
   );
 };

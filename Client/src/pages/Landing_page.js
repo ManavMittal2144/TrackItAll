@@ -1,8 +1,15 @@
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMoneyBillTrendUp } from '@fortawesome/free-solid-svg-icons';
+import { faThumbsUp } from '@fortawesome/free-solid-svg-icons';
+import { faHourglass } from '@fortawesome/free-regular-svg-icons';
+import { faMoneyBill1Wave } from '@fortawesome/free-solid-svg-icons';
+import { faChartLine } from '@fortawesome/free-solid-svg-icons';
+import { faClockRotateLeft } from '@fortawesome/free-solid-svg-icons';
+import React from 'react';
 import myimage from "../phone-image.png";
 import Footer from "../components/Layout/Footer";
+
 
 const Landing = () => {
   return (
@@ -10,8 +17,8 @@ const Landing = () => {
       <nav class="navbar navbar-expand-lg" id="navbb">
         <div class="container-fluid">
           <div class="d-flex justify-content-center align-items-center w-100 spotify">
-            <div>
-              <FontAwesomeIcon icon={faCoffee} />
+            <div class="font_work">
+            <FontAwesomeIcon icon={faMoneyBillTrendUp}/>
             </div>
             <a class="navbar-brand text-center" href="/">
               <i class="fa-brands fa-spotify"></i>
@@ -31,17 +38,14 @@ const Landing = () => {
           </div>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav justify-content-evenly navul">
-              <a class="nav-link active" aria-current="page" href="/">
-                <Link to="/login">Login</Link>
-              </a>
-              <a class="nav-link active" aria-current="page" href="/">
-                <Link to="/register">Register</Link>
-              </a>
-              <a class="nav-link active" aria-current="page" href="/">
+              <a class="nav-link active" aria-current="page" href="#special">
                 About_Us
               </a>
+              <a class="nav-link active" aria-current="page" href="#special1">
+              Support
+              </a>
               <a class="nav-link active" aria-current="page" href="/">
-                Support
+                <Link to="/login">Login/signup</Link>
               </a>
             </div>
           </div>
@@ -49,23 +53,25 @@ const Landing = () => {
       </nav>
       <div class=" bg">
         <img src={myimage} alt="" class="phone_spo" />
-        <div class="content">
+        <div class="content1">
           <p>TrackItAll! Master Your Tasks and Finances</p>
           <button class="button">
             {" "}
             <Link to="/login" className="btn">
-              LOGIN
+              GET STARTED
             </Link>
           </button>
         </div>
       </div>
-
+      <div id="special">
+        <a href="/"></a>
+      </div>
       <h2>Why TrackItAll?</h2>
 
       <div class="part2">
         <div class="rectangle">
           <div class="circle">
-            <i class="fa-solid fa-circle-play"></i>
+          <FontAwesomeIcon icon={faThumbsUp}  className="ii" />
           </div>
           <h6>
             {" "}
@@ -75,7 +81,7 @@ const Landing = () => {
         </div>
         <div class="rectangle">
           <div class="circle">
-            <i class="fa-solid fa-headphones-simple"></i>
+          <FontAwesomeIcon icon={faClockRotateLeft}  className="ii" />
           </div>
           <h6>
             {" "}
@@ -85,7 +91,7 @@ const Landing = () => {
         </div>
         <div class="rectangle">
           <div class="circle">
-            <i class="fa-regular fa-heart"></i>
+          <FontAwesomeIcon icon={faMoneyBill1Wave} className="ii"/>
           </div>
           <h6>
             <b>Financial Mastery</b>
@@ -94,7 +100,7 @@ const Landing = () => {
         </div>
         <div class="rectangle">
           <div class="circle">
-            <i class="fa-solid fa-icons"></i>
+          <FontAwesomeIcon icon={faChartLine} className="ii"/> 
           </div>
           <h6>
             <b>Budget Brilliance</b>
@@ -110,6 +116,9 @@ const Landing = () => {
         <p>It's free. No credit card required.</p>
       </div>
 
+      <div id="special1">
+        <a href="/"></a>
+      </div>
       <footer class="text-center text-lg-start bg-white text-muted footer">
         <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
           <div class="me-5 d-none d-lg-block font_color">
