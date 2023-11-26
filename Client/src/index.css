@@ -354,3 +354,65 @@ footer {
   height: 1.5em;
   padding-right: 8px;
 }
+
+.ram1{
+  margin-top: 20px;
+  background-image: url('https://media.istockphoto.com/id/1407063872/vector/modern-abstract-background-with-black-gradient-abstract-black-business-background.jpg?s=612x612&w=0&k=20&c=6QftyGArm3LTpQsLw29DpZ9ZB42HMNK-wboAWyFZvto=');
+border-radius: 5px;
+box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  height: 70vh;
+  background-size: cover;
+}
+#root{
+  background-image: url('https://static.vecteezy.com/system/resources/thumbnails/003/127/955/small/abstract-white-and-grey-background-with-dynamic-waves-shape-free-vector.jpg');
+  background-size: cover;
+  height: 100vh;
+  margin-top: 0px;
+}
+.footer_base{
+  margin-bottom: 0;
+  position: fixed;
+  width: 100vw;
+}
+.text_color{
+  color: white;
+}
+.switch-icon{
+  background-color: white;
+}
+.btn{
+  background-color: white;
+  border:1px solid white  ;
+}
+.buttonnn{
+  background-color: black;
+  color: white;
+
+}
+.todolist_heading{
+  margin-top: 0px;
+
+}
+.ram2{
+  background-image: url('https://static.vecteezy.com/system/resources/thumbnails/003/127/955/small/abstract-white-and-grey-background-with-dynamic-waves-shape-free-vector.jpg');
+  background-size: cover;
+  height: 125vh;
+}
+.ram3{
+  margin-top: 20px;
+  background-image: url('https://media.istockphoto.com/id/1407063872/vector/modern-abstract-background-with-black-gradient-abstract-black-business-background.jpg?s=612x612&w=0&k=20&c=6QftyGArm3LTpQsLw29DpZ9ZB42HMNK-wboAWyFZvto=');
+border-radius: 5px;
+box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  /* height: 70vh; */
+  background-size: cover; 
+  width: 100%;
+}
+.hh2{
+  color: white;
+  text-decoration: underline;
+}
+.pp2{
+  color: white;
+  text-align: center;
+  font-size: 1.3em;
+}

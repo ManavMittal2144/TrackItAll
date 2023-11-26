@@ -145,11 +145,13 @@ const HomePage = () => {
     }
   };
   return (
+
     <Layout>
       {loading && <Spinner />}
+      <div class="container ram1">
       <div className="filters">
         <div>
-          <h6>Select frequency</h6>
+          <h6 className="text_color">Select frequency</h6>
           <Select value={frequency} onChange={(values) => setFrequency(values)}>
             <Select.Option value="50000"> All </Select.Option>
             <Select.Option value="7">Last 1 Week</Select.Option>
@@ -165,7 +167,7 @@ const HomePage = () => {
           )}
         </div>
         <div>
-          <h6>Select Type</h6>
+          <h6 className="text_color">Select Type</h6>
           <Select value={type} onChange={(values) => setType(values)}>
             <Select.Option value="all"> All </Select.Option>
             <Select.Option value="income">Income</Select.Option>
@@ -260,6 +262,7 @@ const HomePage = () => {
           </div>
         </Form>
       </Modal>
+      </div>
     </Layout>
   );
 };

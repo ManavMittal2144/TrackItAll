@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 const Todo = () => {
   const [task, setTask] = useState("");
-  const [deadline, setDeadline] = useState("");
+  const [deadline, setDeadline] = useState(""); 
   const [priority, setPriority] = useState("low");
   const [filterType, setFilterType] = useState("today");
   const [filterDate, setFilterDate] = useState("");
@@ -168,6 +168,7 @@ const Todo = () => {
 
     return (
       <>
+      
         {/* Not Completed Todos */}
         {notCompletedTodos.length > 0 && (
           <>
@@ -268,12 +269,14 @@ const Todo = () => {
     }
 
     return (
-      <div className="mt-4">
-        <h2>Analysis</h2>
-        <p>Total Todos: {totalTodos}</p>
-        <p>Completed: {completedTodos}</p>
-        <p>Remaining: {remainingTodos}</p>
-        <p>Completion Percentage: {completionPercentage.toFixed(2)}%</p>
+    
+
+      <div className="mt-4 ">
+        <h2 className="hh2" >Analysis</h2>
+        <p className="pp2">Total Todos: {totalTodos}</p>
+        <p className="pp2">Completed: {completedTodos}</p>
+        <p className="pp2">Remaining: {remainingTodos}</p>
+        <p className="pp2">Completion Percentage: {completionPercentage.toFixed(2)}%</p>
         <div className="progress">
           <div
             className="progress-bar"
@@ -286,18 +289,22 @@ const Todo = () => {
             {completionPercentage.toFixed(2)}%
           </div>
         </div>
-        <h2 className="mt-4">Feedback</h2>
-        <p>{feedback}</p>
+        <h2 className="mt-4 hh2">Feedback</h2>
+        <p className="pp2">{feedback}</p>
       </div>
     );
   };
 
   return (
-    <div className="container-fluid mt-4">
-      <h1 className="text-center mb-4">ToDo List</h1>
+    <>
+
+    <div className="ram2">
+      <h1 className=" todolist_heading mb-4">ToDo List</h1>
+      <div class="container ram3">
+
       <div className="input-group mb-3">
         <select
-          className="form-select"
+          className="form-select "
           value={filterType}
           onChange={(e) => setFilterType(e.target.value)}
         >
@@ -385,8 +392,8 @@ const Todo = () => {
         </div>
       )}
       <table className="table">
-        <thead>
-          <tr>
+        <thead className="thead_class">
+          <tr >
             <th scope="col">Completed</th>
             <th scope="col">Task</th>
             <th scope="col">Deadline</th>
@@ -398,6 +405,14 @@ const Todo = () => {
       </table>
       {renderAnalysis()}
     </div>
+    <div className="bg-black text-light p-4">
+      <h4 className="text-center">All rights reserved &copy; TrackItAll</h4>
+    </div>
+</div>
+
+    </>
+
+    
   );
 };
 
