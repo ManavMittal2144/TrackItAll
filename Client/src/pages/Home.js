@@ -16,7 +16,7 @@ const Home = () => {
     // Your useEffect code
 
     // Make sure to include all dependencies, for example:
-    
+
   }, []); // Include all dependencies here
 
   return (
@@ -48,17 +48,45 @@ const Home = () => {
           </div>
         </div>
       </nav>
-      <div>
-        <ul>
-          <li>
-            <Link to="/Expense_Tracker">Page 1</Link>
-          </li>
-          <li>
-            <Link to="/To_Do_List">Page 2</Link>
-          </li>
-          
-        </ul>
-        <hr />
+
+      <div className="container text-center mt-5">
+        <h1>Welcome!</h1>
+
+        <div className="row mt-5">
+          {/* First Image and Name */}
+          <div className="col-md-6">
+            <Link to="/Expense_Tracker" className="btn btn-primary">
+              <img
+                src="https://cdn.vectorstock.com/i/1000x1000/08/43/expense-tracker-app-rgb-color-icon-vector-39050843.webp"
+                alt="Expenses Tracker"
+                className="img-fluid rounded"
+                style={{ height: "250px", width: "250px" }}
+              />
+            </Link>
+            <div className="mt-3">
+              <Link to="/Expense_Tracker" className="btn btn-primary">
+                Expenses Tracker
+              </Link>
+            </div>
+          </div>
+
+          {/* Second Image and Name */}
+          <div className="col-md-6">
+            <Link to="/To_Do_List" className="btn btn-success">
+              <img
+                src="https://adniasolutions.com/wp-content/webp-express/webp-images/uploads/2018/05/To-Do-List-Excel-Template-01.png.webp"
+                alt="To-Do List"
+                className="img-fluid rounded"
+                style={{ height: "250px", width: "250px" }}
+              />
+            </Link>
+            <div className="mt-3">
+              <Link to="/To_Do_List" className="btn btn-success">
+                TO-DO-LIST
+              </Link>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
