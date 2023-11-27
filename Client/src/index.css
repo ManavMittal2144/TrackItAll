@@ -417,6 +417,20 @@ box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 .pp2{
   color: white;
-  text-align: center;
-  font-size: 1.3em;
+text-align: center;
+  font-size  : 1.3em;
+}
+.mm1{
+text-align: center;
+  font-size  : 1.3em;
+}
+.mm3{
+  
+  padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 70%;
+}
+.ram26{
+  height:260px
 }

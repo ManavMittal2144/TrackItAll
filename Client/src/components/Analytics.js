@@ -90,7 +90,7 @@ const Analytics = ({ allTransections }) => {
         </div>
       </div>
       <div className="col-md-4">
-        <div className="card">
+        <div className="card ">
           <div className="card-header">Your Balance</div>
           <div className="card-body">
             <h3 className="text-success">
@@ -99,13 +99,13 @@ const Analytics = ({ allTransections }) => {
             <h3 className="text-danger">
               Total Expense : {totalExpenseTurnOver}
             </h3>
-            <div> </div>
+
             <div>
               {}
               {totalBalance >= 0 ? (
-                <h1 className="positive">Balance : {totalBalance}</h1>
+                <h2 className="positive">Balance : {totalBalance}</h2>
               ) : (
-                <h1 className="negative">Balance : {totalBalance}</h1>
+                <h2 className="negative">Balance : {totalBalance}</h2>
               )}
             </div>
           </div>
