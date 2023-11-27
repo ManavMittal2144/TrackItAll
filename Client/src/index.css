@@ -156,6 +156,7 @@
 
 }
 
+
 .negative {
   color: red;
 
@@ -458,4 +459,8 @@ text-align: center;
   color:black;
   text-shadow: #b88968;
   text-decoration: none;
+}
+
+.shyam{
+  height:260px;
 }
