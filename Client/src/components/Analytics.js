@@ -90,7 +90,7 @@ const Analytics = ({ allTransections }) => {
         </div>
       </div>
       <div className="col-md-4">
-        <div className="card ">
+        <div className="card shyam">
           <div className="card-header">Your Balance</div>
           <div className="card-body">
             <h3 className="text-success">
