@@ -217,6 +217,12 @@ const Landing = () => {
             </div>
           </div>
         </section>
+        <button class="button21">
+            {" "}
+            <a href="https://forms.gle/oqqyJST7Ewod7uM66" className="btm90">
+              Feedback Form
+            </a>
+          </button>
         <div className="bg-black text-light p-4">
           <h4 className="text-center">All rights reserved &copy; TrackItAll</h4>
         </div>
