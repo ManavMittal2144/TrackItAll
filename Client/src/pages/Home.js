@@ -36,7 +36,7 @@ const Home = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
             <Link className="navbar-brand" to="/">
-              Home
+              TrackItAll
             </Link>
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
@@ -49,8 +49,8 @@ const Home = () => {
         </div>
       </nav>
 
-      <div className="container text-center mt-5">
-        <h1>Welcome!</h1>
+      <div className="container text-center mt-5 ">
+        <h1>Welcome To TrackItAll!</h1>
 
         <div className="row mt-5">
           {/* First Image and Name */}

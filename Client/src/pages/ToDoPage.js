@@ -299,15 +299,20 @@ const Todo = () => {
     <>
 
     <div className="ram2">
+
       <h1 className=" todolist_heading mb-4">ToDo List</h1>
       <div class="container ram3">
 
       <div className="input-group mb-3">
+        <div className="ram5">
+
+        </div>
         <select
           className="form-select "
           value={filterType}
           onChange={(e) => setFilterType(e.target.value)}
         >
+
           <option value="today">Today</option>
           <option value="yesterday">Yesterday</option>
           <option value="tomorrow">Tomorrow</option>

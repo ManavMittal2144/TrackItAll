@@ -36,11 +36,11 @@ const Login = () => {
         <div className="upper-info bg_i">
           <div className="center-text">
             <h1>Welcome To TrackItAll</h1>
-            <h4>
+            {/* <h4>
               where tasks meet finance. Simplify your life with our one-stop
               solution for to-dos and expenses. Discover the power of simplicity
               today!
-            </h4>
+            </h4> */}
           </div>
         </div>
         <div className="bg_i">
