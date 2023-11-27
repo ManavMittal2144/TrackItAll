@@ -434,3 +434,28 @@ text-align: center;
 .ram26{
   height:260px
 }
+
+
+.button21{
+  border-radius:5px solid black;
+  margin-left: 200px;
+  height:25px;
+  width:115px;
+  margin-bottom: 10px;
+  background-color: black;
+}
+.btm90{
+  color:white;
+  height:40px;
+  width:150px;
+  text-shadow: #b88968;
+  text-decoration: none;
+}
+.button21:hover{
+  background-color: white;
+}
+.btm90:hover{
+  color:black;
+  text-shadow: #b88968;
+  text-decoration: none;
+}
