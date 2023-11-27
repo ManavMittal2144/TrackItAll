@@ -93,11 +93,11 @@ const StatementPage = () => {
     <div>
       {loading && <p>Loading transactions...</p>}
       <div id="pdf-content">
-        <h1>TrackItAll</h1>
+        <h3>TrackItAll</h3>
 
-        <h1>Your Statement</h1>
+        <h5>Your Statement</h5>
         <Table columns={columns} dataSource={transactions} />
-        <h1>Your Analysis</h1>
+        <h5>Your Analysis</h5>
         <Analytics allTransections={transactions} />
       </div>
       <button onClick={() => navigate(-1)} className="btn btn-primary">
