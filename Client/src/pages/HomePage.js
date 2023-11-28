@@ -275,7 +275,7 @@ const HomePage = () => {
               `/Expense_Tracker/summary?frequency=${frequency}&type=${type}`
             )
           }
-          className="btn btn-primary"
+          className="btn btn-primary button23"
         >
           Generate Statement
         </button>
