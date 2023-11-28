@@ -90,25 +90,29 @@ const StatementPage = () => {
   };
 
   return (
-    <div>
-      {loading && <p>Loading transactions...</p>}
-      <div id="pdf-content">
-        <h3>TrackItAll</h3>
-
-        <h5>Your Statement</h5>
-        <Table columns={columns} dataSource={transactions} />
-        <h5>Your Analysis</h5>
-        <Analytics allTransections={transactions} />
-      </div>
-      <button onClick={() => navigate(-1)} className="btn btn-primary">
-        Go Back
-      </button>
-      <div className="text-center mt-3">
-        <button className="btn btn-primary" onClick={handlePrint}>
-          Generate PDF
+      <div className="pop30">
+        {loading && <p>Loading transactions...</p>}
+        <button onClick={() => navigate(-1)} className="btn btn-primary button29">
+          Go Back
         </button>
+        <div className="text-center mt-3">
+          <button className="btn btn-primary button39" onClick={handlePrint}>
+            Generate PDF
+          </button>
+        </div>
+        <div className="shyam98">
+        
+          <div id="pdf-content">
+            <h1 className="push1">TrackItAll</h1>
+            <h5 className="push2">Your Statement</h5>
+            <Table columns={columns} dataSource={transactions} />
+            <div id="pdf-content">
+              <h5 className="push2">Your Analysis</h5>
+              <Analytics allTransections={transactions} />
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
   );
 };
 
