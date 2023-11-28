@@ -14,7 +14,9 @@ const Home = () => {
   // Assuming you have a useEffect somewhere in your component
   useEffect(() => {
     // Your useEffect code
+
     // Make sure to include all dependencies, for example:
+
   }, []); // Include all dependencies here
 
   return (
@@ -34,7 +36,9 @@ const Home = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
             <Link className="navbar-brand" to="/">
-              TrackItAll
+            <button className="btn btn-primary">
+              Home
+              </button>
             </Link>
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
@@ -47,7 +51,7 @@ const Home = () => {
         </div>
       </nav>
 
-      <div className="container text-center mt-5 ">
+      <div className="container text-center mt-5">
         <h1>Welcome To TrackItAll!</h1>
 
         <div className="row mt-5">
@@ -83,11 +87,6 @@ const Home = () => {
                 TO-DO-LIST
               </Link>
             </div>
-          </div>
-          <div className="mt-3">
-            <Link to="/Diaries" className="btn btn-primary">
-              Diary
-            </Link>
           </div>
         </div>
       </div>
