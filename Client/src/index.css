@@ -464,3 +464,57 @@ text-align: center;
 .shyam{
   height:260px;
 }
+
+.button23{
+  margin-left: 100px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background-color: black;
+  color:white;
+}
+.button23:hover{
+  background-color: white;
+  color:black;
+}
+
+.button29{
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 1365px;
+  background-color: black;
+  color:white;
+}
+.button29:hover{
+  background-color: white;
+  color:black;
+}
+.button39{
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 1330px;
+  background-color: black;
+  color:white;
+}
+.button39:hover{
+  background-color: white;
+  color:black;
+}
+
+.shyam98{
+  padding:100px;
+  padding-top: 0px;
+
+}
+
+.push1{
+  text-align: center;
+  text-decoration: underline;
+  color:orangered;
+}
+.push2{
+  color:red;
+}
+
+.pop30{
+  background-image: url('https://media.istockphoto.com/id/1407063872/vector/modern-abstract-background-with-black-gradient-abstract-black-business-background.jpg?s=612x612&w=0&k=20&c=6QftyGArm3LTpQsLw29DpZ9ZB42HMNK-wboAWyFZvto=');
+}
