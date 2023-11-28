@@ -364,6 +364,14 @@ box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   height: 70vh;
   background-size: cover;
 }
+.ram111{
+  margin-top: 20px;
+  background-image: url('https://media.istockphoto.com/id/1407063872/vector/modern-abstract-background-with-black-gradient-abstract-black-business-background.jpg?s=612x612&w=0&k=20&c=6QftyGArm3LTpQsLw29DpZ9ZB42HMNK-wboAWyFZvto=');
+  border-radius: 5px; 
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  height: 80vh;
+  background-size: cover;
+}
 #root{
   background-image: url('https://static.vecteezy.com/system/resources/thumbnails/003/127/955/small/abstract-white-and-grey-background-with-dynamic-waves-shape-free-vector.jpg');
   background-size: cover;
@@ -392,6 +400,8 @@ box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 .todolist_heading{
   margin-top: 0px;
+  background-color: black;
+  color:white;
 
 }
 .ram2{
@@ -403,23 +413,29 @@ box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   width:2000px;
 }
 .ram3{
-  margin-top: 20px;
+  /* margin-top: 20px; */
   background-image: url('https://media.istockphoto.com/id/1407063872/vector/modern-abstract-background-with-black-gradient-abstract-black-business-background.jpg?s=612x612&w=0&k=20&c=6QftyGArm3LTpQsLw29DpZ9ZB42HMNK-wboAWyFZvto=');
-border-radius: 5px;
-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   /* height: 70vh; */
   background-size: cover; 
   width: 100%;
 }
 .hh2{
-  color: white;
+  color: #bdf1a9;
   font-size: 3.7rem;
+  margin-bottom: 0px;
   text-decoration: underline;
 }
 .pp2{
   color: white;
 text-align: center;
   font-size  : 1.3em;
+}
+.ppp2{
+  color: white;
+text-align: center;
+  font-size  : 2.3em;
 }
 .mm1{
 text-align: center;
@@ -509,12 +525,52 @@ text-align: center;
 .push1{
   text-align: center;
   text-decoration: underline;
-  color:orangered;
+  color: #8fa487;
 }
 .push2{
-  color:red;
+  color:#7995a8;
 }
 
 .pop30{
   background-image: url('https://media.istockphoto.com/id/1407063872/vector/modern-abstract-background-with-black-gradient-abstract-black-business-background.jpg?s=612x612&w=0&k=20&c=6QftyGArm3LTpQsLw29DpZ9ZB42HMNK-wboAWyFZvto=');
+}
+
+.mohan2{
+  background-color: black;
+  height:70px;
+  width:100vw;
+  color:white;
+}
+.mohan76{
+  color:white;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.mohan90{
+  color:white;
+  text-decoration: underline;
+  margin-bottom: 0px;
+}
+.mohan55{
+  background-color: black;
+  color:white;
+  margin:5px;
+}
+
+.mohan99{
+  margin-bottom: 100px;
+}
+
+.mohan100{
+  background-image: url('https://static.vecteezy.com/system/resources/thumbnails/003/127/955/small/abstract-white-and-grey-background-with-dynamic-waves-shape-free-vector.jpg');
+  background-size: cover;
+  /* height: 150vh; */
+  margin-top: 0px;
+}
+
+.button233{
+  /* margin-left: 100px; */
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background-color: black;
+  color:white;
 }

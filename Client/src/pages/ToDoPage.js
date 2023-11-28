@@ -290,7 +290,8 @@ const Todo = () => {
           </div>
         </div>
         <h2 className="mt-4 hh2">Feedback</h2>
-        <p className="pp2">{feedback}</p>
+        <p className="ppp2">{feedback}</p>
+        
       </div>
     );
   };
@@ -300,7 +301,7 @@ const Todo = () => {
 
     <div className="ram2">
 
-      <h1 className=" todolist_heading mb-4">ToDo List</h1>
+      <h1 className=" todolist_heading mb-4">Task Trek</h1>
       <div class="container ram3">
 
       <div className="input-group mb-3">

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-
+import { useNavigate } from "react-router-dom";
 const DiaryForm = () => {
   const [title, setTitle] = useState("");
   const [date, setDate] = useState("");
@@ -49,7 +49,6 @@ const DiaryForm = () => {
       console.error("Error:", error.response);
     }
   };
-
   const handleDelete = async (entryId) => {
     try {
       await axios.delete(`http://localhost:8080/api/v1/Diaries/${entryId}`);
@@ -67,12 +66,26 @@ const DiaryForm = () => {
       console.error("Error deleting entry:", error.response);
     }
   };
-
+  const navigate = useNavigate();
+  const redirectToHome = () => {
+    navigate("../Home");
+  };
   return (
-    <div className="container mt-5">
-      <h1 className="text-center">Diary App</h1>
+  <>
+  <div className="mohan100">
+    <h1 className="todolist_heading mb-4">Quick Note</h1>
+    <div className="container mt-5 ram3">  
       <div className="form-group">
-        <label>Title:</label>
+        <button
+          className="btn btn-primary button233"
+          type="button"
+          onClick={redirectToHome}
+        >
+          Go to Home
+        </button>
+        <div>
+        </div>
+        <label className="mohan76">Title:</label>
         <input
           type="text"
           className="form-control"
@@ -81,7 +94,7 @@ const DiaryForm = () => {
         />
       </div>
       <div className="form-group">
-        <label>Date:</label>
+        <label className="mohan76">Date:</label>
         <input
           type="Date"
           className="form-control"
@@ -90,19 +103,19 @@ const DiaryForm = () => {
         />
       </div>
       <div className="form-group">
-        <label>Description:</label>
+        <label className="mohan76">Description:</label>
         <textarea
           className="form-control"
           value={description}
           onChange={(e) => setDescription(e.target.value)}
         />
       </div>
-      <button type="button" className="btn btn-primary" onClick={handleSubmit}>
+      <button type="button" className="btn btn-primary mohan55" onClick={handleSubmit}>
         Submit
       </button>
 
-      <h2>Diary Entries</h2>
-      <ul className="list-group">
+      <h2 className="mohan90">Diary Entries</h2>
+      <ul className="list-group mohan99">
         {entries.map((entry) => (
           <li key={entry._id} className="list-group-item">
             <div>
@@ -110,7 +123,7 @@ const DiaryForm = () => {
               <p>{entry.description}</p>
               <button
                 type="button"
-                className="btn btn-danger"
+                className="btn btn-danger mohan55"
                 onClick={() => handleDelete(entry._id)}
               >
                 Delete
@@ -120,6 +133,12 @@ const DiaryForm = () => {
         ))}
       </ul>
     </div>
+    <div className="bg-black text-light p-4">
+      <h4 className="text-center">All rights reserved &copy; TrackItAll</h4>
+    </div>
+  </div>
+    </>
+    
   );
 };
 

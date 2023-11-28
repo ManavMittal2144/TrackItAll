@@ -150,7 +150,7 @@ const HomePage = () => {
   return (
     <Layout>
       {loading && <Spinner />}
-      <div class="container ram1">
+      <div class="container ram111">
         <div className="filters">
           <div>
             <h6 className="text_color">Select frequency</h6>
@@ -208,6 +208,18 @@ const HomePage = () => {
               Add New
             </button>
           </div>
+          <div>
+        <button
+          onClick={() =>
+            navigate(
+              `/Expense_Tracker/summary?frequency=${frequency}&type=${type}`
+            )
+          }
+          className="btn btn-primary button23"
+        >
+          Generate Statement
+        </button>
+      </div>
         </div>
         <div className="content">
           {viewData === "table" ? (
@@ -267,18 +279,6 @@ const HomePage = () => {
             </div>
           </Form>
         </Modal>
-      </div>
-      <div>
-        <button
-          onClick={() =>
-            navigate(
-              `/Expense_Tracker/summary?frequency=${frequency}&type=${type}`
-            )
-          }
-          className="btn btn-primary button23"
-        >
-          Generate Statement
-        </button>
       </div>
     </Layout>
   );

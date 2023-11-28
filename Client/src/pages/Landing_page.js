@@ -54,7 +54,7 @@ const Landing = () => {
       <div class=" bg">
         <img src={myimage} alt="" class="phone_spo" />
         <div class="content1">
-          <p>TrackItAll! Master Your Tasks and Finances</p>
+          <p>TrackItAll! A Comprehensive Personal Management Solution</p>
           <button class="button">
             {" "}
             <Link to="/login" className="btn">

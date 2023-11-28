@@ -57,7 +57,7 @@ const Home = () => {
             </Link>
             <div className="mt-3">
               <Link to="/Expense_Tracker" className="btn btn-primary">
-                Expenses Tracker
+                Your Wallet
               </Link>
             </div>
           </div>
@@ -74,7 +74,7 @@ const Home = () => {
             </Link>
             <div className="mt-3">
               <Link to="/To_Do_List" className="btn btn-success">
-                TO-DO-LIST
+                Task Trek
               </Link>
             </div>
           </div>
@@ -91,7 +91,7 @@ const Home = () => {
             </Link>
             <div className="mt-3">
               <Link to="/Diaries" className="btn btn-primary">
-                Diary
+                Quick Note
               </Link>
             </div>
           </div>
