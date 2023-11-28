@@ -6,6 +6,7 @@ import ToDoList from "./pages/ToDoPage";
 import Home from "./pages/Home";
 import Landing from "./pages/Landing_page";
 import StatementPage from "./pages/printpage";
+import Diary from "./pages/diarypage";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           exact
           element={<StatementPage />}
         />
+        <Route path="/diaries" element={<Diary />} />
       </Routes>
     </>
   );

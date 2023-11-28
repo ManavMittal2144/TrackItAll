@@ -14,9 +14,7 @@ const Home = () => {
   // Assuming you have a useEffect somewhere in your component
   useEffect(() => {
     // Your useEffect code
-
     // Make sure to include all dependencies, for example:
-
   }, []); // Include all dependencies here
 
   return (
@@ -85,6 +83,11 @@ const Home = () => {
                 TO-DO-LIST
               </Link>
             </div>
+          </div>
+          <div className="mt-3">
+            <Link to="/Diaries" className="btn btn-primary">
+              Diary
+            </Link>
           </div>
         </div>
       </div>
