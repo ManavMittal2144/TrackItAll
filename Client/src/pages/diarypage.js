@@ -71,74 +71,79 @@ const DiaryForm = () => {
     navigate("../Home");
   };
   return (
-  <>
-  <div className="mohan100">
-    <h1 className="todolist_heading mb-4">Quick Note</h1>
-    <div className="container mt-5 ram3">  
-      <div className="form-group">
-        <button
-          className="btn btn-primary button233"
-          type="button"
-          onClick={redirectToHome}
-        >
-          Go to Home
-        </button>
-        <div>
-        </div>
-        <label className="mohan76">Title:</label>
-        <input
-          type="text"
-          className="form-control"
-          value={title}
-          onChange={(e) => setTitle(e.target.value)}
-        />
-      </div>
-      <div className="form-group">
-        <label className="mohan76">Date:</label>
-        <input
-          type="Date"
-          className="form-control"
-          value={date}
-          onChange={(e) => setDate(e.target.value)}
-        />
-      </div>
-      <div className="form-group">
-        <label className="mohan76">Description:</label>
-        <textarea
-          className="form-control"
-          value={description}
-          onChange={(e) => setDescription(e.target.value)}
-        />
-      </div>
-      <button type="button" className="btn btn-primary mohan55" onClick={handleSubmit}>
-        Submit
-      </button>
+    <>
+      <div className="mohan100">
+        <h1 className="todolist_heading mb-4">Quick Note</h1>
+        <div className="container mt-5 ram3">
+          <div className="form-group">
+            <button
+              className="btn btn-primary button233"
+              type="button"
+              onClick={redirectToHome}
+            >
+              Go to Home
+            </button>
+            <div></div>
+            <label className="mohan76">Title:</label>
+            <input
+              type="text"
+              className="form-control"
+              value={title}
+              onChange={(e) => setTitle(e.target.value)}
+            />
+          </div>
+          <div className="form-group">
+            <label className="mohan76">Date:</label>
+            <input
+              type="Date"
+              className="form-control"
+              value={date}
+              onChange={(e) => setDate(e.target.value)}
+            />
+          </div>
+          <div className="form-group">
+            <label className="mohan76">Description:</label>
+            <textarea
+              className="form-control"
+              value={description}
+              onChange={(e) => setDescription(e.target.value)}
+            />
+          </div>
+          <button
+            type="button"
+            className="btn btn-primary mohan55"
+            onClick={handleSubmit}
+          >
+            Submit
+          </button>
 
-      <h2 className="mohan90">Diary Entries</h2>
-      <ul className="list-group mohan99">
-        {entries.map((entry) => (
-          <li key={entry._id} className="list-group-item">
-            <div>
-              <strong>{entry.title}</strong> - {entry.date}
-              <p>{entry.description}</p>
-              <button
-                type="button"
-                className="btn btn-danger mohan55"
-                onClick={() => handleDelete(entry._id)}
-              >
-                Delete
-              </button>
-            </div>
-          </li>
-        ))}
-      </ul>
-    </div>
-    <div className="bg-black text-light p-4">
-      <h4 className="text-center">All rights reserved &copy; TrackItAll</h4>
-    </div>
-  </div>
+          <h2 className="mohan90">Diary Entries</h2>
+          <ul className="list-group mohan99">
+            {entries.map((entry) => (
+              <li key={entry._id} className="list-group-item">
+                <div>
+                  <h4>
+                    <strong>Title:{entry.title}</strong>
+                  </h4>
+                  <h5> Date:{entry.date.slice(0, 10)}</h5>
+                  <p>{entry.description}</p>
+                  <button
+                    type="button"
+                    className="btn btn-danger mohan55"
+                    onClick={() => handleDelete(entry._id)}
+                  >
+                    Delete
+                  </button>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="bg-black text-light p-4">
+          <h4 className="text-center">All rights reserved &copy; TrackItAll</h4>
+        </div>
+      </div>
     </>
-    
   );
 };
 
